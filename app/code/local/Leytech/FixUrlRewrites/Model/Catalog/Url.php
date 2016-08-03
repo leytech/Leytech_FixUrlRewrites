@@ -79,13 +79,24 @@ class Leytech_FixUrlRewrites_Model_Catalog_Url extends Mage_Catalog_Model_Url
                 $this->_rewrite = $rewrite;
                 return $requestPath;
             }
+
+            // avoid unnecessary creation of new url_keys for duplicate url keys
+            $noSuffixPath = substr($requestPath, 0, -(strlen($suffix)));
+            $regEx = '#^('.preg_quote($noSuffixPath).')(-([0-9]+))?('.preg_quote($suffix).')#i';
+            $currentRewrite = $this->getResource()->getRewriteByIdPath($idPath, $storeId);
+            if ($currentRewrite && preg_match($regEx, $currentRewrite->getRequestPath(), $match)) {
+                $this->_rewrite = $currentRewrite;
+                return $currentRewrite->getRequestPath();
+            }
+
             // match request_url abcdef1234(-12)(.html) pattern
             $match = array();
             $regularExpression = '#^([0-9a-z/-]+?)(-([0-9]+))?('.preg_quote($suffix).')?$#i';
             if (!preg_match($regularExpression, $requestPath, $match)) {
                 return $this->getUnusedPath($storeId, '-', $idPath);
             }
-            $match[1] = $match[1] . '-';
+            $match[1] = $noSuffixPath . '-'; // always use full prefix of url_key
+            unset($match[3]); // don't start counting with a possible number in the url_key
             $match[4] = isset($match[4]) ? $match[4] : '';
 
             $lastRequestPath = $this->getResource()
