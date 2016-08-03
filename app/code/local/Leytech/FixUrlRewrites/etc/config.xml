@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Leytech_FixUrlRewrites>
+            <version>1.0.0</version>
+        </Leytech_FixUrlRewrites>
+    </modules>
+    <global>
+        <models>
+            <catalog>
+                <rewrite>
+                    <url>Leytech_FixUrlRewrites_Model_Catalog_Url</url>
+                </rewrite>
+            </catalog>
+        </models>
+    </global>
+</config>

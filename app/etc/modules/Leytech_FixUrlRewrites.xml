@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Leytech_FixUrlRewrites>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Leytech_FixUrlRewrites>
+    </modules>
+</config>
