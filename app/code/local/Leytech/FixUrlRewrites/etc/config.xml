@@ -9,7 +9,7 @@
         <models>
             <catalog>
                 <rewrite>
-                    <url>Leytech_FixUrlRewrites_Model_Catalog_Url</url>
+                    <url>Leytech_FixUrlRewrites_Model_Url</url>
                 </rewrite>
             </catalog>
         </models>

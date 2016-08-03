@@ -31,7 +31,7 @@
  * @package    Mage_Catalog
  * @author     Magento Core Team <core@magentocommerce.com>
  */
-class Leytech_FixUrlRewrites_Model_Catalog_Url extends Mage_Catalog_Model_Url
+class Leytech_FixUrlRewrites_Model_Url extends Mage_Catalog_Model_Url
 {
     /**
      * Get requestPath that was not used yet.
