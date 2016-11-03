@@ -1,3 +1,2 @@
-app/code/local/Leytech/RestrictAccess/etc/config.xml app/code/local/Leytech/RestrictAccess/etc/config.xml
-app/code/local/Leytech/RestrictAccess/Model/Url.php app/code/local/Leytech/RestrictAccess/Model/Url.php
-app/etc/modules/Leytech_FixUrlRewrites.xml app/etc/modules/Leytech_FixUrlRewrites.xml
+app/code/local/Leytech/FixUrlRewrites               app/code/local/Leytech/FixUrlRewrites
+app/etc/modules/Leytech_FixUrlRewrites.xml          app/etc/modules/Leytech_FixUrlRewrites.xml
