@@ -1,13 +1,13 @@
 {
-    "name": "leytech/leytech_fixurlrewrites",
-    "type": "magento-module",
-    "description": "Module to fix the longstanding URL re-indexing bug in Magento 1.x",
-    "homepage": "https://github.com/leytech/Leytech_FixUrlRewrites",
-    "require": {
-        "php": ">=5.4.0",
-        "magento-hackathon/magento-composer-installer": "*"
-    },
-    "extra":{
-        "magento-root-dir": "src/"
-    }
+  "name": "leytech/leytech_fixurlrewrites",
+  "type": "magento-module",
+  "description": "Module to fix the longstanding URL re-indexing bug in Magento 1.x",
+  "homepage": "https://github.com/leytech/Leytech_FixUrlRewrites",
+  "require": {
+    "php": ">=5.4.0",
+    "magento-hackathon/magento-composer-installer": "*"
+  },
+  "extra":{
+    "magento-root-dir": "src/"
+  }
 }
