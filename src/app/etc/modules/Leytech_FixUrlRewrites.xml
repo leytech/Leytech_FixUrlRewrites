@@ -1,4 +1,12 @@
 <?xml version="1.0"?>
+<!--
+/**
+ * @package    Leytech_FixUrlRewrites
+ * @author     Chris Nolan (chris@leytech.co.uk)
+ * @copyright  Copyright (c) 2017 Leytech
+ * @license    https://opensource.org/licenses/MIT  The MIT License  (MIT)
+ */
+-->
 <config>
     <modules>
         <Leytech_FixUrlRewrites>
