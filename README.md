@@ -6,6 +6,10 @@ If the core_url_rewrite table (as shown in URL Rewrite Management) is becoming v
 
 Affected versions: Magento CE 1.7.x - 1.9.x
 
+### Rewrites
+
+This module rewrites the Mage_Catalog_Model_Url model
+
 ### References
 
 Stack Exchange: https://magento.stackexchange.com/q/1565/4087
