@@ -4,6 +4,8 @@ This extension provides a fix for the longstanding URL re-indexing bug in Magent
 
 If the core_url_rewrite table (as shown in URL Rewrite Management) is becoming very full and generating URLs with random numbers after them (e.g. www.example.com/example-123) then you've likely hit this bug. 
 
+Affected versions: Magento CE 1.7.x - 1.9.x
+
 ### References
 
 Stack Exchange: https://magento.stackexchange.com/q/1565/4087
