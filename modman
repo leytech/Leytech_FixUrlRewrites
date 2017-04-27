@@ -1,2 +1,2 @@
-app/code/local/Leytech/FixUrlRewrites               app/code/local/Leytech/FixUrlRewrites
-app/etc/modules/Leytech_FixUrlRewrites.xml          app/etc/modules/Leytech_FixUrlRewrites.xml
+src/app/code/community/Leytech/FixUrlRewrites               app/code/community/Leytech/FixUrlRewrites
+src/app/etc/modules/Leytech_FixUrlRewrites.xml              app/etc/modules/Leytech_FixUrlRewrites.xml
