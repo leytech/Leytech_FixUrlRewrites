@@ -10,10 +10,15 @@
 <config>
     <modules>
         <Leytech_FixUrlRewrites>
-            <version>1.0.0</version>
+            <version>1.0.1</version>
         </Leytech_FixUrlRewrites>
     </modules>
     <global>
+        <helpers>
+            <leytech_fixurlrewrites>
+                <class>Leytech_FixUrlRewrites_Helper</class>
+            </leytech_fixurlrewrites>
+        </helpers>
         <models>
             <catalog>
                 <rewrite>
@@ -22,4 +27,11 @@
             </catalog>
         </models>
     </global>
+    <default>
+        <leytech_fixurlrewrites>
+            <settings>
+                <enabled>1</enabled>
+            </settings>
+        </leytech_fixurlrewrites>
+    </default>
 </config>

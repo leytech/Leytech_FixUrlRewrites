@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package    Leytech_FixUrlRewrites
+ * @author     Chris Nolan (chris@leytech.co.uk)
+ * @copyright  Copyright (c) 2017 Leytech
+ * @license    https://opensource.org/licenses/MIT  The MIT License  (MIT)
+ */
+-->
+<config>
+    <tabs>
+        <leytech>
+            <label><![CDATA[<img alt="Leytech" title="Leytech" width="18" height="18" style="display:block; float:left; margin-right: 3px;" src=" data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAMAAAAM7l6QAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAYBQTFRF6Ojo087Z6ebruK/DSzNo+fr4+PX15ubmHABBCLnDRy1iANfX//b2IQBF/v7+gHGU8PDwY056NhtWmYuoBtjY3d3dr6W709PT/P778/T0FAA67u7uDNnZAOHf2traGQA+LtzdUTht+Pj3qZ22w7jKQSRfPSVcAtjYANjYHA5PJQlI9fX19vf29vT08fDyON7e+/v79vX1+Pj4+vv59/X19vb2/Pz88vHzIgA/9/j39fT039/f/v78/fb29/b3ANva1NTU+fn4///+uu7uhHSX9vb14t/moZWw/PX1/v/9///89PP129bgme7t6+rsMODf4ODg7uzvy8TSjejoB9zbqezsCDpptPHwjX6eK7/I+Pn4HhJR3uPn1/HxoZWv+/z6INzcBczQIgdH8/L0KQ9MJCde4PPz4ezu7fT0N+bj8/Pz9/f29PX19Pb19fX0gOfnWUV0d2eNXOPjaOTkFQA3Mt7e+fb2+vX1PN/fbFqD7ezv+fn5+vr6////9PT0////0G75iAAAAIB0Uk5T/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////wA4BUtnAAABmUlEQVR42pyT51vCMBDGg4AgLQ62VRkuHgkiFFCcQN17D3ABihP3tk3zr9vKCoJ+8P2Uu19yT/LeBWDMAr9fqJZfw2MMsNkaFmtLY8YgbEW/ULEx5gNrLJkZ7iQjHgAfURpynyvcNBEPAqEc2caUul7L8XyulPGXsRopWhyS7jdQsJgTitiL6poyjF4Sk3mYQcOVeGHiyMBo9VrptLTBYDzhCAzV3ToZMoYuS+/3QqdMwhIOxBM7kQjjmapDaH3vlJELDHlLuL/+sqMh26JAalFMoqWPjF7b4yPxABV1xscK7+NUjipMrd4ECmYEXTWws7WI1f/B4t/Fx8fzOIhqYFP70xkdyrvr+fkwJ2UyUanNHM1NzBp+2jLytp2i3CY39bLb7Sq4y0KiJfTFXbtUIJruk1siu3tb0dB6+vDRTW2l9yMOR97dCiyKc/Tku3T6WaWct1WNg3wDOrScyBoXOUgMU3M5EEP0+QG6JkZRACs8ObqvcTJifYC3//oNBu0QYOuoAGtByLbFpD+Gm0ehwFdJgOYrjL8EGAC87jredkXqnQAAAABJRU5ErkJggg=="> Leytech Extensions]]></label>
+            <sort_order>600</sort_order>
+        </leytech>
+    </tabs>
+    <sections>
+        <leytech_fixurlrewrites translate="label" module="leytech_fixurlrewrites">
+            <label>Fix URL Rewrites</label>
+            <tab>leytech</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>60</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <about translate="label">
+                    <label>About</label>
+                    <sort_order>10</sort_order>
+                    <frontend_type>text</frontend_type>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <expanded>1</expanded>
+                    <comment>
+                        <![CDATA[
+                        <h3>Leytech Fix URL Rewrites Extension</h3>
+                        <p>This extension fixes the longstanding URL re-indexing bug in Magento 1.x.</p>
+                        ]]>
+                    </comment>
+                </about>
+                <settings translate="label">
+                    <label>Settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>20</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <expanded>1</expanded>
+                    <fields>
+                        <enabled translate="label">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enabled>
+                    </fields>
+                </settings>
+            </groups>
+        </leytech_fixurlrewrites>
+    </sections>
+</config>

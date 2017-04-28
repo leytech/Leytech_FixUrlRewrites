@@ -20,6 +20,10 @@ class Leytech_FixUrlRewrites_Model_Url extends Mage_Catalog_Model_Url
      */
     public function getUnusedPath($storeId, $requestPath, $idPath)
     {
+        if(!Mage::helper('leytech_fixurlrewrites')->isEnabled()) {
+            return parent::getUnusedPath($storeId, $requestPath, $idPath);
+        }
+
         if (strpos($idPath, 'product') !== false) {
             $suffix = $this->getProductUrlSuffix($storeId);
         } else {
