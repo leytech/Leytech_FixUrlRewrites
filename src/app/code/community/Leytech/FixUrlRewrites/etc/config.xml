@@ -10,7 +10,7 @@
 <config>
     <modules>
         <Leytech_FixUrlRewrites>
-            <version>1.0.1</version>
+            <version>1.0.2</version>
         </Leytech_FixUrlRewrites>
     </modules>
     <global>
